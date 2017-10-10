@@ -1,0 +1,11 @@
+site_name: fxdayu_data_doc
+theme: readthedocs
+pages:
+    - Home: index.md
+    - DataAPI:
+        - 简介: DataAPI/introduce.md
+        - 快速安装: DataAPI/quickstart.md
+#        - 数据源: DataAPI/datasource.md
+        - 配置文件: DataAPI/config.md
+        - 命令行工具: DataAPI/commands.md
+        - 数据读取: DataAPI/api.md
