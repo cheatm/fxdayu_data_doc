@@ -92,3 +92,15 @@ DataAPI export -n bundle -t bundle
 ```
 DataAPI export -t bundle D:/MongoConfig.py
 ```
+
+
+## update
+update命令用于更新数据，目前支持从2015年开始的沪深300的日线，分红和因子数据。
+
+```
+DataAPI update [TARGET]
+```
+
+>
+    TARGET: 更新后数据存放的目录。
+
