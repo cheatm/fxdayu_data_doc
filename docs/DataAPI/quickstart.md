@@ -1,18 +1,4 @@
-从这里开始快速配置数据及使用DataAPI
-
-## 下载数据
-
-从百度云下载数据压缩包并解压。
-
-
-|链接|http://pan.baidu.com/s/1c2q5EWK|
-|:----:|:----:|
-|密码|cvz3|
-
-
-解压得到如下图所示目录，其中**BundleConfig.py**是要添加的配置文件。
-
-![data](data.png)
+从这里开始快速安装数据及使用DataAPI
 
 ## 使用pip安装fxdayu_data
 
@@ -20,15 +6,10 @@
 pip install fxdayu_data
 ```
 
-## 添加配置文件并使用
-
-- 进入解压的目录可以看到BundleConfig.py文件，将该文件的绝对路径记为PATH。
-
-- 使用DataAPI添加配置文件，命名为bundle并设为默认配置。
+## 用命令行更新数据
 
 ```
-DataAPI add -n bundle PATH
-DataAPI use bundle
+DataAPI update
 ```
 
 ## 测试

@@ -44,6 +44,23 @@ DataAPI.factor(symbols, fields=None, start=None, end=None, length=None)
 |end|否|String, Datetime|开始时间，String类型格式为: "YYYY-mm-dd"或"YYYY-mm-dd HH:MM:SS"|
 |length|否|int|要读取的时间长度|
 
+## bonus
+
+- 读取分红数据
+
+```python
+DataAPI.bonus(symbol, fields=None, start=None, end=None, length=None)
+```
+
+**参数：**
+
+|参数名|必选|类型|说明|
+|:----|:---|:----- |-----   |
+|symbols|是|String, Iterable|要读取的品种名或返回元素为品种名的可迭代对象(list, tuple)|
+|fields|否|String, Iterable|要读取的字段|
+|start|否|String, Datetime|开始时间，String类型格式为: "YYYY-mm-dd"或"YYYY-mm-dd HH:MM:SS"|
+|end|否|String, Datetime|开始时间，String类型格式为: "YYYY-mm-dd"或"YYYY-mm-dd HH:MM:SS"|
+|length|否|int|要读取的时间长度|
 
 ## info
 
@@ -59,3 +76,30 @@ DataAPI.info.codes(name)
 |参数名|必选|类型|说明|
 |:----|:---|:----- |-----   |
 |name|是|String|指定股票分类的名字|
+
+
+- factor_description:
+因子介绍
+
+```python
+DataAPI.info.factor_description(name=None, classification=None)
+```
+
+|参数名|必选|类型|说明|
+|:----|:---|:----- |-----   |
+|name|否|String，Iterable|根据因子名读取|
+|classification|否|String, Iterable|根据因子类型读取|
+
+- trade_days:
+交易日
+
+```python
+DataAPI.info.trade_days(start=None, end=None, length=None, is_open=None)
+```
+
+|参数名|必选|类型|说明|
+|:----|:---|:----- |-----   |
+|start|否|String, Datetime|开始时间，String类型格式为: "YYYY-mm-dd"或"YYYY-mm-dd HH:MM:SS"|
+|end|否|String, Datetime|开始时间，String类型格式为: "YYYY-mm-dd"或"YYYY-mm-dd HH:MM:SS"|
+|length|否|int|要读取的时间长度|
+|is_open|否|int|1:读取交易日；0：非交易日；缺省:全部|
